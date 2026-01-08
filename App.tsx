@@ -15,7 +15,7 @@ import {
     Search,
     Clock,
     Target,
-    CloudCheck,
+    //   CloudCheck,
     Loader2,
     RefreshCw
 } from 'lucide-react';
@@ -159,7 +159,7 @@ const App: React.FC = () => {
                                     </span>
                                 ) : (
                                     <span className="flex items-center gap-1 text-[10px] bg-green-600/30 text-green-100 px-2 py-0.5 rounded-full">
-                                        <CloudCheck className="w-3 h-3" /> Eşitlendi
+                                        {/* <CloudCheck className="w-3 h-3" />*/} Eşitlendi
                                     </span>
                                 )}
                             </div>
@@ -274,8 +274,8 @@ const App: React.FC = () => {
                                         key={task.id}
                                         onClick={() => toggleTask(currentDayData.day, task.id)}
                                         className={`group cursor-pointer p-5 rounded-2xl border-2 transition-all flex items-start gap-4 ${task.isCompleted
-                                                ? 'bg-green-50/50 border-green-200 shadow-inner'
-                                                : 'bg-white border-slate-100 hover:border-indigo-100 hover:shadow-lg hover:-translate-y-0.5'
+                                            ? 'bg-green-50/50 border-green-200 shadow-inner'
+                                            : 'bg-white border-slate-100 hover:border-indigo-100 hover:shadow-lg hover:-translate-y-0.5'
                                             }`}
                                     >
                                         <div className="mt-1">
@@ -289,8 +289,8 @@ const App: React.FC = () => {
                                             <div className="flex items-center justify-between mb-1">
                                                 <div className="flex items-center gap-2">
                                                     <span className={`px-2 py-0.5 rounded-md text-[9px] font-black uppercase ${task.subject === 'Matematik' ? 'bg-blue-100 text-blue-700' :
-                                                            task.subject === 'Fizik' ? 'bg-red-100 text-red-700' :
-                                                                task.subject === 'Kimya' ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'
+                                                        task.subject === 'Fizik' ? 'bg-red-100 text-red-700' :
+                                                            task.subject === 'Kimya' ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'
                                                         }`}>
                                                         {task.subject}
                                                     </span>
